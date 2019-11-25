@@ -1,0 +1,213 @@
+
+// 商品详情页主体部分
+.production-details{
+    width: 100%;
+    margin: 0;
+    padding:0;
+    margin-top: 100px;
+    
+    // 图片及规格部分
+    .main-box{
+        width: 1300px;
+        height: 600px;
+        // background-color: cadetblue;
+        margin: 0 auto;
+        box-sizing: border-box;
+        position: relative;
+        border-bottom: 1px solid #999999;
+
+        // 右侧规格
+        .pro-right{
+            width: 620px;
+            height: 600px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            
+            // background-color: coral;
+            z-index: 100; 
+            
+            // 上部标题
+            .pro-right-top{
+                h2,h1{
+                    font-size: 18px;
+                    height: 21px;
+                    line-height: 21px;
+                    color: black;
+                }
+                h1{
+                    margin-top: 5px;
+                }
+                // 评价
+                .start{
+                    font-size: 14px;
+                    color: black;
+                    margin-top: 26px;
+                    span{
+                        margin-left: 20px;
+                        a{
+                        color: #999999;
+                        text-decoration: none;
+                        }   
+                    }
+                }
+            }
+
+            // 中间规格
+            .pro-capacity{
+                width: 166px;
+                height: 72px;
+                margin: 10px;
+                padding: 18px 20px;
+                border: 1px solid black;
+                overflow: hidden;
+                // 20ml及价格样式
+                p{
+                    font-size: 14px;
+                    color: black;
+                }
+                // 价格样式
+                .pro-capacity-price{
+                    color: #999999;
+                    margin-top: 8px;
+                }
+            }
+
+            // 购买数量
+            .buy-kind{
+                width: 100%;
+                height: 50px;
+                margin: 20px 0;
+                .float-left{
+                    float: left;
+                }
+
+                // 价格
+                .pro-price{
+                    display: inline-block;
+                    width: 40px;
+                    height: 50px;
+                    line-height: 50px;
+                    font-size: 16px;
+                    color: black;
+                    font-weight: 900;
+                    margin-right: 50px;
+                }
+                // 添加菜单
+                .amount-widget {
+                    margin: 0 10px 0 0;
+                    width: 102px;
+                    height: 48px;
+                    border: 1px solid #e6e6e6;
+                }
+                .zs-increase,
+                .zs-no-increase,
+                .zs-decrease,
+                .zs-no-decrease {
+                    background: url(http://icon.zol-img.com.cn/newshop/shop/detail/youdian_v1/bg.png) no-repeat;
+                    float: left;
+                    width: 28px;
+                    height: 48px;
+                    background-color: #f8f8f8;
+                    cursor: pointer;
+                }
+
+                .zs-increase {
+                    background-position: -32px -155px;
+                }
+                .zs-goods-number {
+                    float: left;
+                    width: 44px;
+                    height: 48px;
+                    text-align: center;
+                    font: 12px/28px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";
+                    border: 0 none;
+                    border-left: 1px solid #e6e6e6;
+                    border-right: 1px solid #e6e6e6;
+                    color: #333;
+                }
+                .zs-decrease {
+                    background-position: 0 -155px;
+                }
+
+                // 加入购物车以及立即购买
+                .add-shopcar,.buyit-now{
+                    width: 160px;
+                    height: 50px;
+                    background-color: black;
+                    outline: none;
+                    border: none;
+                    margin: 0 5px; 
+                    transition: all 0.3s;
+                    &:hover{
+                        background-color: #d61b52;
+                    }
+                    a{
+                    display: block;
+                    color: white;
+                    line-height: 50px;
+                    font-weight: 900;
+                    font-size: 14px;
+                    text-align: center;
+                    }   
+                }
+            }
+
+            // 注释
+            .notes{
+                width: 100%;
+                box-sizing: border-box;
+                p,a{
+                    height: 24px;
+                    line-height: 24px;
+                    font-size: 14px;
+                    color: black;
+                    margin: 8px 0;
+                }
+                .color-red{
+                    color: #ff0000;
+                    margin-bottom: 25px;
+                }
+                a{
+                    text-decoration: underline;
+                    display: block;
+                }
+                .add-list{
+                    margin-top: 30px;
+                }
+            }
+
+            // 下面的图片
+            >ul{
+                li{
+                    float: left;
+                    text-align: center;
+                    width: 33%;
+                    border-left: 1px solid #999999;
+                    p{
+                        font-size: 14px;
+                        margin-top: 10px;
+                        text-align: center;
+                        color: black;
+                    }
+                }
+                .border-right{
+                    border-right: 1px solid #999999;
+                }
+            }
+        }
+    }
+
+    // 展示图片
+    .propic-list{
+        margin-top: 50px;
+        width: 790px;
+        margin: 0 auto;
+        img{
+            width: 100%;
+        }
+    }
+    .bottom-first-pic{
+        border-top: 1px solid #999999;
+    }
+}

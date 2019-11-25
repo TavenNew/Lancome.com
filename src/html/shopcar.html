@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>购物车</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="../style/shopcar.css" />
+</head>
+
+<body>
+    <div style="height:70px;background: black;">
+        <a href="../html/lancomeindex.html">
+            <img src="../img/logo@2x.png" style="width: 200px;display: block; margin: 0 auto;padding-top: 7px;" />
+        </a>
+    </div>
+    <div class="header clearfix">
+        <div class="flow-step">
+            <ul class="flow-step-1">
+                <li class="s1">加入购物车</li>
+                <li class="s2">下订单</li>
+                <li class="s3">去付款</li>
+                <li class="s4">确认收货</li>
+                <li class="s5">评价</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container" style="font-size: 16px;">
+        <!-- <div class="pic"></div>
+        <div class="text">
+            <h5>您的购物车里还没有商品，您可以：</h5>
+            去<a href="#">挑选商品</a>
+        </div> -->
+        <table>
+            <tr style="border-top:2px solid black">
+                <td>所选商品</td>
+                <td>数量</td>
+                <td>价格</td>
+                <td>操作</td>
+            </tr>
+        </table>
+
+        <ul class="itemlist">
+            <!-- <li class="item">
+                <div class="c-box">
+                    <input type="checkbox" id="p1">
+                </div>
+                <div class="p-img">
+                    <img  class="lazy" data-original="../img/img-index/fdj1-1.jpg" alt="">
+                </div>
+                <div class="p-title">
+                    Apple MacBook Pro 13.3英寸笔记本电脑 深空灰色 2018新款（四核八代i5 8G 256G固态硬盘 MR9Q2CH/A）
+                </div>
+                <div class="p-num">
+                    数量：<input type="number" value="1" min="1" max="55">
+                </div>
+                <div class="p-price">
+                    单价:9999.00
+                </div>
+                <div class="p-sum">
+                    总价:9999.00
+                </div>
+                <div class="del"><a href="#">删除</a></div>
+            </li> -->
+        </ul>
+        <script src="../js/jquery.js"></script>
+        <script src="../js/cookie.js"></script>
+        <script>
+            $(function() {
+                var shop = cookie.get("shop");
+                if (shop) {
+                    shop = JSON.parse(shop);
+                    var idList = shop.map(elm => elm.id).join();
+                    $.ajax({
+                        type: "get",
+                        url: "../lib/shop.php",
+                        data: {
+                            idList: idList
+                        },
+                        dataType: "json",
+                        success: function(data) {
+                            var tempstr = "";
+                            data.forEach(elm => {
+                                let pic = JSON.parse(elm.img3);
+                                var arr = shop.filter((val, i) => {
+                                    return val.id == elm.id;
+                                });
+                                tempstr += `
+                            <li class="item" data-main="${elm.id}">
+                                <div class="c-box">
+                                    <input type="checkbox" id="p1">
+                                </div>
+                                <div class="p-img">
+                                    <img  src="${pic[0].src}">
+                                </div>
+                                <div class="p-title">
+                                    ${elm.title}
+                                    <div class="p-title">
+                                    ${elm.title2}
+                                </div>
+                                </div>
+                                
+                                <div class="amount-widget" id="click">
+                                        <span class="zs-decrease zs-no-decrease next" style="cursor: pointer;"></span>
+                                        <input name="zp-goods-number" 
+                                        type="text" value="${
+                                          arr[0].num
+                                        }" class="zs-goods-number" id="zp-number">
+                                        <span class="zs-increase next" style="cursor: pointer;"></span>
+                                    </div>
+                                <div class="p-price" style="color:red;">
+                                    单价:<span>${elm.price}</span>
+                                </div>
+                                <div class="p-sum" style="color:red;width:110px;">
+                                    总价:<span>${(
+                                      arr[0].num * elm.price
+                                    ).toFixed(2)}<span>
+                                </div>
+                                <div class="del"><a href="#">删除</a></div>
+                            </li>`;
+                            });
+
+                            $(".itemlist").append(tempstr);
+
+                            $(".next").on("click", function(ev) {
+                                // var input = $('#zp-number');
+                                var input = $(ev.target).siblings("#zp-number");
+                                var value = parseInt(input.val());
+                                input[0].value = $(ev.target).hasClass("zs-decrease") ?
+                                    value - 1 :
+                                    value + 1;
+                                var num1 = parseInt(
+                                    $(ev.target)
+                                    .parent()
+                                    .siblings(".p-price")
+                                    .children()
+                                    .text()
+                                );
+                                var num2 = num1 * input[0].value;
+                                $(ev.target)
+                                    .parent()
+                                    .siblings(".p-sum")
+                                    .children()
+                                    .html(num2.toFixed(2));
+                            });
+
+                            $(".itemlist").on("click", function(ev) {
+                                if (ev.target.nodeName == "A") {
+                                    $(ev.target)
+                                        .parent()
+                                        .parent()
+                                        .remove();
+                                    var id1 = $("li").index(
+                                        $(ev.target)
+                                        .parent()
+                                        .parent()
+                                    );
+                                    var shop2 = [];
+                                    shop2 = shop.splice(id1, 1);
+                                    cookie.set("shop", JSON.stringify(shop), 1);
+                                }
+                            });
+                        }
+                    });
+                } else {
+                    $(".itemlist").html(
+                        '<h3 style="color:blue;">!!!!!您得购物车空荡荡的......</h3>'
+                    );
+                }
+                if (!cookie.get("isLogin")) {
+                    // $('#username').text('');
+                } else {
+                    $("#username").html(cookie.get("username"));
+                    $("#loginout").on("click", function() {
+                        cookie.remove("isLogin");
+                        cookie.remove("username");
+                        location.reload();
+                    });
+                }
+            });
+        </script>
+    </div>
+    <div class="container">
+        <div style="float:  right;margin-right: 100px;">
+            <button type="button" class="btn  money" style="width: 130px;">
+          去结算
+        </button>
+        </div>
+    </div>
+    <div class="like">
+        <a href="#">猜你喜欢</a>
+        <div></div>
+    </div>
+    <footer class="footer-simple none-sm" style="width: 100%;">
+        <div class="footer-simple-viation float-clearfix">
+            <div class="viation-items">
+                <p class="items-title">
+                    <i class="icon icon-simple-lock"></i>安全支付保障
+                </p>
+                <p>安全支付系统采用SSL加密。</p>
+                <p class="alipay-way">
+                    <i class="icon icon-simple-alipay"></i>
+                    <i class="icon icon-simple-wepay"></i>
+                    <i class="icon icon-simple-unionpay"></i>
+                </p>
+            </div>
+            <div class="viation-items">
+                <p class="items-title">
+                    <i class="icon icon-simple-phone"></i>联系我们
+                </p>
+                <p>如果您有任何问题，</p>
+                <p>希望得到进一步咨询，</p>
+            </div>
+            <div class="viation-items">
+                <p class="items-title">
+                    <i class="icon icon-simple-gift"></i>您的特殊礼遇
+                </p>
+                <p>首款好礼</p>
+                <p>首次购物可获赠</p>
+                <p>免费礼品小样</p>
+            </div>
+            <div class="viation-items">
+                <p class="items-title">
+                    <i class="icon icon-simple-clock"></i>全国配送
+                </p>
+                <p>快递可至全国各地</p>
+                <p>快递2至6日</p>
+                <p>正常送达全国</p>
+            </div>
+            <div class="viation-items">
+                <p class="items-title">
+                    <i class="icon icon-simple-chat"></i>需要帮助？
+                </p>
+                <p>我们在线客服人员将帮助您在线选购商品</p>
+                <p>
+                    <a class="showOulaiya" title="在线咨询">在线咨询</a>
+                </p>
+                <p>（周一至周日9:00-21:00）</p>
+                <p>客服热线：400-820-8016</p>
+                <p>（周一至周日9:00-21:00）</p>
+            </div>
+        </div>
+
+        <div>
+            <ul class="statement">
+                <li class="none-sm">
+                    <span>© L’Oreal China 欧莱雅（中国）有限公司版权所有</span>
+                </li>
+                <li>
+                    <i class="icon icon-footer-zggs"></i>
+                    <a target="_blank" href="http://218.242.124.22:8081/businessCheck/verifKey.do?showType=extShow&amp;serial=9031000020170518090333000001788070-SAIC_SHOW_310000-2012041023233378655&amp;signData=MEQCIC1EYAXJibTl39TcZqED26v2xVQIXO0gFJ8lNsUhO02wAiBjblUFfS5r1ezDJXX3NoQixYijB6IdK7kJ7vx1664UZw=="
+                        rel="nofollow">
+                        <span>中国工商</span> </a><span>&nbsp;&nbsp;</span>
+                    <a target="_blank" href="http://www.miibeian.gov.cn" rel="nofollow">
+                        <span>沪ICP备08100043号-34</span>
+                    </a>
+                </li>
+                <li>
+                    <i class="icon icon-footer-hgyab"></i>
+                    <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010602001526" rel="nofollow">
+                        <span>沪公网安备 31010602001526号</span>
+                    </a>
+                </li>
+                <li class="none block-sm">
+                    <span>© L’Oreal China 欧莱雅（中国）有限公司版权所有</span>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lancome|兰蔻官网-更美丽,更幸福,源自法国的高端美妆品牌</title>
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../style/banner.css" />
+    <link rel="stylesheet" type="text/css" href="../style/banneradd.css">
+    <link rel="stylesheet" type="text/css" href="../style/index-main.css">
+    <link rel="stylesheet" type="text/css" href="../style/footer.css">
+    <script type="text/javascript" src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../js/banner2.js"></script>
+    <script src="../js/cookie.js"></script>
+    <script>
+        $(function() {
+            if (!cookie.get("isLogin")) {
+                $('#username').html('<i class="iconfont">&#xe640;</i>');
+                $('#loginout').text('');
+            } else {
+                $('#username').html(cookie.get('username'));
+                $('#loginout').text('退出');
+                // $('.line').text('');
+                $('#loginout').on('click', function() {
+                    cookie.remove('isLogin');
+                    cookie.remove('username');
+                    location.reload();
+                });
+            }
+        });
+    </script>
+</head>
+
+
+<body>
+    <!-- 头部结构——logo、导航、二级导航 -->
+    <div class="header">
+        <!-- 头部logo -->
+        <div class="header-top">
+            <div class="header-top-container">
+                <a href="https://www.lancome.com.cn/">
+                    <img src="../img/logo@2x.png" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- 一级导航及购物车 -->
+        <div class="header-bottom">
+            <div class="header-bottom-container">
+                <!-- 一级导航 -->
+                <ul class="nav">
+                    <li>
+                        <a href="javascript:;">
+                            <span>
+                                首页
+                            </span>
+                        </a>
+                    </li>
+
+                    <!-- 护肤 -->
+                    <li class="skincare">
+                        <a href="javascript:;">
+                            <span>护肤</span>
+                        </a>
+                        <!-- 护肤二级导航 -->
+                        <div class="subnav skincare-subnav">
+                            <!-- 二级导航盒子版心 -->
+                            <div class="subnav-container">
+                                <!-- 左边的导航 -->
+                                <div class="subnav-left">
+                                    <!-- 先来一个无序列表 -->
+                                    <ul class="subnav-menu out-ul">
+                                        <!-- 产品类型 -->
+                                        <li class="out-list">
+                                            <!-- 产品类型下的无序列表 -->
+                                            <span>产品类型</span>
+                                            <ul class="inside-ul">
+                                                <li class="inside-list">
+                                                    <a href="javascript:;">卸妆&洁面</a>
+                                                </li>
+                                                <li class="inside-list">
+                                                    <a href="javascript:;">美容液&爽肤水</a>
+                                                </li>
+                                                <li class="inside-list">
+                                                    <a href="javascript:;">精华</a>
+                                                </li>
+                                                <li class="inside-list">
+                                                    <a href="javascript:;">眼部护理</a>
+                                                </li>
+                                                <li class="inside-list">
+                                                    <a href="javascript:;">乳液</a>
+                                                </li>
+                                                <li class="inside-list">
+                                                    <a href="javascript:;">面霜</a>
+                                                </li>
+                                                <li class="inside-list">
+                                                    <a href="javascript:;">面膜</a>
+                                                </li>
+                                                <li class="inside-list">
+                                                    <a href="javascript:;">防晒隔离</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <!-- 产品系列 -->
+                                        <li class="out-list">
+                                            <span>产品系列</span>
+                                            <!-- 产品系列下的无序列表 -->
+                                            <ul class="inside-ul">
+                                                <li class="inside-list">
+                                                    <a href="javascript:;">清滢清洁系列</a>
+                                                </li>
+                                                <li class="inside-list">
+                                                    <a href="javascript:;">小黑瓶系列</a>
+                                                </li>
+                                                <li class="inside-list">
+                                                    <a href="javascript:;">水分缘系列</a>
+                                                </li>
+                                                <li class="inside-list">
+                                                    <a href="javascript:;">臻白系列</a>
+                                                </li>
+                                                <li class="inside-list">
+                                                    <a href="javascript:;">清透防晒系列</a>
+                                                </li>
+                                                <li class="inside-list">
+                                                    <a href="javascript:;">素颜系列</a>
+                                                </li>
+                                                <li class="inside-list">
+                                                    <a href="javascript:;">菁纯系列</a>
+                                                </li>
+                                                <li class="inside-list">
+                                                    <a href="javascript:;">男士系列</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <!-- 肌肤需求 -->
+                                        <li class="out-list">
+                                            <span>肌肤需求</span>
+                                            <!-- 肌肤需求下的无序列表 -->
+                                            <ul class="inside-ul">
+                                                <li class="inside-list">
+                                                    <a href="javascript:;">卸妆清洁</a>
+                                                </li>
+                                                <li class="inside-list">
+                                                    <a href="javascript:;">舒缓保湿</a>
+                                                </li>
+                                                <li class="inside-list">
+                                                    <a href="javascript:;">精华修复</a>
+                                                </li>
+                                                <li class="inside-list">
+                                                    <a href="javascript:;">美白淡斑</a>
+                                                </li>
+                                                <li class="inside-list">
+                                                    <a href="javascript:;">紧致提拉</a>
+                                                </li>
+                                                <li class="inside-list">
+                                                    <a href="javascript:;">抗老愈颜</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- 右边的图片 -->
+                                <div class="subnav-right">
+                                    <a href="javascript:;">
+                                        <img src="../img/15737477286534760.jpg" alt="">
+                                        <div>全新第二代小黑瓶精华</div>
+                                        <p>一瓶重现紧致好肤质&nbsp;&gt;</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- 彩妆 -->
+                    <li class="makeup">
+                        <a href="javascript:;">
+                            <span>彩妆</span>
+                        </a>
+                        <!-- 彩妆下的二级导航 -->
+                        <div class="subnav makeup-subnav">
+                            <!-- 二级导航盒子版心 -->
+                            <div class="subnav-container">
+                                <!-- 左边的导航 -->
+                                <div class="subnav-left">
+                                    <!-- 先来一个无序列表 -->
+                                    <ul class="subnav-menu out-ul">
+                                        <!-- 产品类型 -->
+                                        <li class="out-list">
+                                            <!-- 产品类型下的无序列表 -->
+                                            <span>底妆</span>
+                                            <ul class="inside-ul">
+                                                <li class="inside-list">
+                                                    <a href="javascript:;">妆前乳</a>
+                                                </li>
+                                                <li class="inside-list">
+                                                    <a href="javascript:;">气垫霜</a>
+                                                </li>
+                                                <li class="inside-list">
+                                                    <a href="javascript:;">粉底</a>
+                                                </li>
+                                                <li class="inside-list">
+                                                    <a href="javascript:;">蜜粉&散粉</a>
+                                                </li>
+                                                <li class="inside-list">
+                                                    <a href="javascript:;">修容遮瑕</a>
+                                                </li>
+                                                <li class="inside-list">
+                                                    <a href="javascript:;">腮红</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <!-- 产品系列 -->
+                                        <li class="out-list">
+                                            <span>唇妆</span>
+                                            <!-- 产品系列下的无序列表 -->
+                                            <ul class="inside-ul">
+                                                <li class="inside-list">
+                                                    <a href="javascript:;">唇膏</a>
+                                                </li>
+                                                <li class="inside-list">
+                                                    <a href="javascript:;">唇釉</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <!-- 肌肤需求 -->
+                                        <li class="out-list">
+                                            <span>眼妆</span>
+                                            <!-- 肌肤需求下的无序列表 -->
+                                            <ul class="inside-ul">
+                                                <li class="inside-list">
+                                                    <a href="javascript:;">睫毛膏</a>
+                                                </li>
+                                                <li class="inside-list">
+                                                    <a href="javascript:;">眼影</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="out-list">
+                                            <span>美妆&工具</span>
+                                            <!-- 肌肤需求下的无序列表 -->
+                                            <ul class="inside-ul">
+                                                <li class="inside-list">
+                                                    <a href="javascript:;">粉底刷</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- 右边的图片 -->
+                                <div class="subnav-right">
+                                    <a href="javascript:;">
+                                        <img src="../img/15738072993021917.jpg" alt="">
+                                        <div>菁纯宝石唇膏#02</div>
+                                        <p>唇间宝石&nbsp;浓郁显色&nbsp;&gt;</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- 香水 -->
+                    <li class="perfume">
+                        <a href="javascript:;">
+                            <span>香水</span>
+                        </a>
+
+                        <!-- 香水下的二级导航 -->
+                        <div class="subnav perfume-subnav">
+                            <!-- 二级导航盒子版心 -->
+                            <div class="subnav-container">
+                                <!-- 左边的导航 -->
+                                <div class="subnav-left">
+                                    <!-- 先来一个无序列表 -->
+                                    <ul class="subnav-menu out-ul">
+                                        <!-- 产品类型 -->
+                                        <li class="out-list">
+                                            <!-- 产品类型下的无序列表 -->
+                                            <span>女士香水</span>
+                                            <ul class="inside-ul">
+                                                <li class="inside-list">
+                                                    <a href="javascript:;">美丽人生系列</a>
+                                                </li>
+                                                <li class="inside-list">
+                                                    <a href="javascript:;">奇迹系列</a>
+                                                </li>
+                                                <li class="inside-list">
+                                                    <a href="javascript:;">珍爱系列</a>
+                                                </li>
+                                                <li class="inside-list">
+                                                    <a href="javascript:;">殿堂</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- 右边的图片 -->
+                                <div class="subnav-right">
+                                    <a href="javascript:;">
+                                        <img src="../img/15738072993021917.jpg" alt="">
+                                        <div>菁纯宝石唇膏#02</div>
+                                        <p>唇间宝石&nbsp;浓郁显色&nbsp;&gt;</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- 菁纯奢宠 -->
+                    <li>
+                        <a href="javascript:;">
+                            <span>
+                                菁纯奢宠
+                                <span class="tag">HOT</span>
+                            </span>
+                        </a>
+                    </li>
+
+                    <!-- 畅销榜单 -->
+                    <li class="boom-list">
+                        <a href="javascript:;">
+                            <span>畅销榜单</span>
+                        </a>
+                        <div class="subnav boom-list-subnav">
+                            <a href="JavaScript:;">
+                                <img src="../img/15632688499538577.jpg" alt="">
+                            </a>
+                        </div>
+                    </li>
+
+                    <!-- 会员中心 -->
+                    <li>
+                        <a href="javascript:;">
+                            <span>会员中心</span>
+                        </a>
+                    </li>
+
+                    <!-- 官网购物理由 -->
+                    <li class="reason">
+                        <a href="javascript:;">
+                            <span>官网购物理由</span>
+                        </a>
+                        <div class="subnav reason-subnav">
+                            <a href="JavaScript:;">
+                                <img src="../img/1559786691928905.jpg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <!-- 搜索、购物车、个人中心 -->
+                <ul class="search">
+                    <!-- 搜索 -->
+                    <li class="search-pic">
+                        <a href="javascript:;">
+                            <i class="iconfont">&#xe608;</i>
+                        </a>
+                    </li>
+                    <!-- 购物车 -->
+                    <li class="shoppingcar">
+                        <a href="./shopcar.html">
+                            <i class="iconfont">&#xe666;</i>
+                        </a>
+                    </li>
+                    <!-- 个人中心 -->
+                    <li class="per-center">
+                        <a href="./login.html" id="username">
+                            <i class="iconfont">&#xe640;</i>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="javascript:;" id="loginout" style="color: #fff;width: 100px;margin-left: 20px;font-size: 20px;">退出</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 第一个轮播图 -->
+    <div id="demo01" class="flexslider">
+
+        <ul class="slides">
+
+            <li>
+                <div class="img">
+                    <a href="JavaScript:;">
+                        <img src="../img/15741294698845942.jpg" height="550" width "100%" alt="" />
+                    </a>
+                </div>
+            </li>
+
+            <li>
+                <div class="img">
+                    <a href="JavaScript:;">
+                        <img src="../img/15737447634861678.jpg" height="550" width "100%" alt="" />
+                    </a>
+                </div>
+            </li>
+
+            <li>
+                <div class="img">
+                    <a href="JavaScript:;">
+                        <img src="../img/15737450151717728.jpg" height="550" width "100%" alt="" />
+                    </a>
+                </div>
+            </li>
+
+            <li>
+                <div class="img">
+                    <a href="JavaScript:;">
+                        <img src="../img/15737448996505892.jpg" height="550" width "100%" alt="" />
+                    </a>
+                </div>
+            </li>
+
+            <li>
+                <div class="img">
+                    <a href="JavaScript:;">
+                        <img src="../img/15737450608501093.jpg" height="550" width "100%" alt="" />
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 当季推荐 -->
+    <div class="banner-innertitle">
+        <h3>当季推荐</h3>
+    </div>
+
+    <!-- 第二个轮播图 -->
+    <div class="banner" id="b03">
+
+        <ul>
+
+            <li>
+                <!-- 一页轮播图 -->
+                <div class="banner2-box box2">
+                    <!-- 左侧图片 -->
+                    <!-- <div class="product-box">
+                        <div class="pic-box">
+                            <a href="./production.html">
+                                <img src="../img/15670589576663210_920X920.jpg" alt="" width="100%">
+                            </a>
+                        </div>
+                        <a href="JavaScript:;">
+                            <h3>一瓶重现细嫩好肤质</h3>
+                            <p>第二代小黑瓶精华</p>
+                            <span>￥760</span>
+                        </a>
+                        <div class="price">
+                            <a href="JavaScript:;">购买</a>
+                        </div>
+                    </div> -->
+                    <!-- 中间图片 -->
+                    <!-- <div class="product-box">
+                        <div class="pic-box">
+                            <a href="./production.html">
+                                <img src="../img/1561045101456509_920X920.jpg" alt="" width="100%">
+                            </a>
+                        </div>
+                        <a href="JavaScript:;">
+                            <h3>润而不腻&nbsp;干皮救星</h3>
+                            <p>兰蔻新轻盈柔肤水</p>
+                            <span>￥420</span>
+                        </a>
+                        <div class="price">
+                            <a href="JavaScript:;">购买</a>
+                        </div>
+                    </div> -->
+                    <!-- 右侧图片 -->
+                    <!-- <div class="product-box">
+                        <div class="pic-box">
+                            <a href="./production.html">
+                                <img src="../img/15610451667831420_920X920.jpg" alt="" width="100%">
+                            </a>
+                        </div>
+                        <a href="JavaScript:;">
+                            <h3>收眼袋 · 平细纹 · 养睫毛</h3>
+                            <p>兰蔻新眼部精华肌底液</p>
+                            <span>￥680</span>
+                        </a>
+                        <div class="price">
+                            <a href="JavaScript:;">购买</a>
+                        </div>
+                    </div> -->
+
+                </div>
+            </li>
+            <script>
+                $(function() {
+                    $.ajax({
+                        type: "get",
+                        url: "../lib/get.php",
+                        dataType: "json",
+                        success: function(data) {
+                            console.log(data)
+                            let temp = '';
+                            data.forEach((elm, i) => {
+                                let pic = JSON.parse(elm.img3);
+                                temp += `
+                                    <div class="product-box">
+                        <div class="pic-box">
+                            <a href="./production.html?id=${elm.id}">
+                                <img src="${pic[0].src}" alt="" width="100%">
+                            </a>
+                        </div>
+                        <a href="JavaScript:;">
+                            <h3>一瓶重现细嫩好肤质</h3>
+                            <p>第二代小黑瓶精华</p>
+                            <span>￥760</span>
+                        </a>
+                        <div class="price">
+                            <a href="JavaScript:;">购买</a>
+                        </div>
+                    </div>
+                                    `
+                            });
+                            $('.box2').append(temp);
+                        }
+                    });
+                });
+            </script>
+            <!-- 二页轮播图 -->
+            <li>
+                <div class="banner2-box">
+                    <!-- 左侧图片 -->
+                    <div class="product-box">
+                        <div class="pic-box">
+                            <a href="JavaScript:;">
+                                <img src="../img/15610452990244599_920X920.jpg" alt="" width="100%">
+                            </a>
+                        </div>
+                        <a href="JavaScript:;">
+                            <h3>持久水润不粘腻</h3>
+                            <p>兰蔻水份缘舒缓凝露</p>
+                            <span>￥575</span>
+                        </a>
+                        <div class="price">
+                            <a href="JavaScript:;">购买</a>
+                        </div>
+                    </div>
+                    <!-- 中间图片 -->
+                    <div class="product-box">
+                        <div class="pic-box">
+                            <a href="JavaScript:;">
+                                <img src="../img/15589469130178237_920X920.jpg" alt="" width="100%">
+                            </a>
+                        </div>
+                        <a href="JavaScript:;">
+                            <h3>紧致 · 白皙 · 淡纹</h3>
+                            <p>兰蔻塑颜紧致焕白霜</p>
+                            <span>￥895</span>
+                        </a>
+                        <div class="price">
+                            <a href="JavaScript:;">购买</a>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="pic-box">
+                            <a href="JavaScript:;">
+                                <img src="../img/15737919975924401_920X920.jpg" alt="" width="100%">
+                            </a>
+                        </div>
+                        <a href="JavaScript:;">
+                            <h3>柔润显色&nbsp;一抹气场全开</h3>
+                            <p>菁纯柔润唇膏</p>
+                            <span>￥270</span>
+                        </a>
+                        <div class="price">
+                            <a href="JavaScript:;">购买</a>
+                        </div>
+                    </div>
+
+                </div>
+            </li>
+
+            <!-- 三页轮播图 -->
+            <li>
+                <div class="banner2-box">
+                    <!-- 左侧图片 -->
+                    <div class="product-box">
+                        <div class="pic-box">
+                            <a href="JavaScript:;">
+                                <img src="../img/1574083950681920_920X920.jpg" alt="" width="100%">
+                            </a>
+                        </div>
+                        <a href="JavaScript:;">
+                            <h3>宝石入妆 炫目耀眼</h3>
+                            <p>菁纯宝石唇膏</p>
+                            <span>￥270</span>
+                        </a>
+                        <div class="price">
+                            <a href="JavaScript:;">购买</a>
+                        </div>
+                    </div>
+                    <!-- 中间图片 -->
+                    <div class="product-box">
+                        <div class="pic-box">
+                            <a href="JavaScript:;">
+                                <img src="../img/15610455543656894_920X920.png" alt="" width="100%">
+                            </a>
+                        </div>
+                        <a href="JavaScript:;">
+                            <h3>持久持妆 近看不假面</h3>
+                            <p>兰蔻持妆轻透粉底液</p>
+                            <span>￥420</span>
+                        </a>
+                        <div class="price">
+                            <a href="JavaScript:;">购买</a>
+                        </div>
+                    </div>
+                    <div class="product-box">
+                        <div class="pic-box">
+                            <a href="JavaScript:;">
+                                <img src="../img/15670589576663210_920X920.jpg" alt="" width="100%">
+                            </a>
+                        </div>
+                        <a href="JavaScript:;">
+                            <h3>拒绝泛红&nbsp;安稳敏感肌</h3>
+                            <p>兰蔻【小黑瓶】安瓶精华</p>
+                            <span>￥690</span>
+                        </a>
+                        <div class="price">
+                            <a href="JavaScript:;">购买</a>
+                        </div>
+                    </div>
+
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 菁纯奢宠臻献 -->
+    <div class="banner-innertitle">
+        <h3>菁纯奢宠臻献</h3>
+    </div>
+
+    <!--菁纯奢宠臻献图片-->
+    <div class="kimpure">
+        <a href="JavaScript:;">
+            <img src="../img/15737453117295154.jpg" alt="">
+        </a>
+    </div>
+
+    <!-- 兰蔻菁纯奢宠家族 -->
+    <div class="kimpure-home">
+        <a href="JavaScript:;">
+            <h4>兰蔻菁纯奢宠家族</h4>
+            <p>兰蔻菁纯奢宠家族，由内而外自带高光，唤启你的丰润无龄肌。</p>
+        </a>
+    </div>
+
+    <!-- 第三个假装轮播图 -->
+    <div class="banner">
+        <li>
+            <div class="banner2-box">
+                <!-- 左侧图片 -->
+                <div class="product-box">
+                    <div class="pic-box">
+                        <a href="JavaScript:;">
+                            <img src="../img/15737923870183324_920X920.jpg" alt="" width="100%">
+                        </a>
+                    </div>
+                    <a href="JavaScript:;">
+                        <h3>持久水润不粘腻</h3>
+                        <p>兰蔻水份缘舒缓凝露</p>
+                        <span>￥575</span>
+                    </a>
+                    <div class="price">
+                        <a href="JavaScript:;">购买</a>
+                    </div>
+                </div>
+                <!-- 中间图片 -->
+                <div class="product-box">
+                    <div class="pic-box">
+                        <a href="JavaScript:;">
+                            <img src="../img/15737922246855053_920X920.jpg" alt="" width="100%">
+                        </a>
+                    </div>
+                    <a href="JavaScript:;">
+                        <h3>紧致 · 白皙 · 淡纹</h3>
+                        <p>兰蔻塑颜紧致焕白霜</p>
+                        <span>￥895</span>
+                    </a>
+                    <div class="price">
+                        <a href="JavaScript:;">购买</a>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <div class="pic-box">
+                        <a href="JavaScript:;">
+                            <img src="../img/1573792346400275_920X920.jpg" alt="" width="100%">
+                        </a>
+                    </div>
+                    <a href="JavaScript:;">
+                        <h3>柔润显色&nbsp;一抹气场全开</h3>
+                        <p>菁纯柔润唇膏</p>
+                        <span>￥270</span>
+                    </a>
+                    <div class="price">
+                        <a href="JavaScript:;">购买</a>
+                    </div>
+                </div>
+
+            </div>
+        </li>
+    </div>
+
+    <!-- 官网特别服务 -->
+    <div class="banner-innertitle">
+        <h3>官网特别服务</h3>
+    </div>
+
+    <!-- 第四排图片 -->
+    <div class="banner">
+        <li>
+            <div class="banner2-box">
+                <!-- 左侧图片 -->
+                <div class="product-box">
+                    <div class="pic-box">
+                        <a href="JavaScript:;">
+                            <img src="../img/15737454704858105.jpg" alt="" width="100%">
+                        </a>
+                    </div>
+                    <a href="JavaScript:;">
+                        <h3>持久水润不粘腻</h3>
+                        <p>兰蔻水份缘舒缓凝露</p>
+                    </a>
+                    <div class="price">
+                        <a href="JavaScript:;">购买</a>
+                    </div>
+                </div>
+                <!-- 中间图片 -->
+                <div class="product-box">
+                    <div class="pic-box">
+                        <a href="JavaScript:;">
+                            <img src="../img/15737453635315040.jpg" alt="" width="100%">
+                        </a>
+                    </div>
+                    <a href="JavaScript:;">
+                        <h3>紧致 · 白皙 · 淡纹</h3>
+                        <p>兰蔻塑颜紧致焕白霜</p>
+                    </a>
+                    <div class="price">
+                        <a href="JavaScript:;">购买</a>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <div class="pic-box">
+                        <a href="JavaScript:;">
+                            <img src="../img/1573745398338564.jpg" alt="" width="100%">
+                        </a>
+                    </div>
+                    <a href="JavaScript:;">
+                        <h3>柔润显色&nbsp;一抹气场全开</h3>
+                        <p>菁纯柔润唇膏</p>
+                    </a>
+                    <div class="price">
+                        <a href="JavaScript:;">购买</a>
+                    </div>
+                </div>
+
+            </div>
+        </li>
+    </div>
+
+    <!-- 加入我们 -->
+    <div class="jionus">
+        <a href="javascript:;">
+            <img src="../img/15614453776788153.jpg" alt="">
+        </a>
+    </div>
+
+    <!-- 尾部结构 -->
+    <div class="footer">
+        <!-- 中国官网字 -->
+        <div class="lancome-china">
+            <h4>兰蔻中国官方网站</h4>
+        </div>
+
+        <!-- 售卖服务 -->
+        <div class="sell-serve">
+            <div class="sell-serve-inner">
+                <div class="each-box">
+                    <img src="../img/footer-1.png" alt="">
+                    <h4>正品保证</h4>
+                    <p>官方直供原装</p>
+                </div>
+                <div class="each-box">
+                    <img src="../img/footer-2.png" alt="">
+                    <h4>顺丰包邮</h4>
+                    <p>港澳台偏远地区除外</br>亦可提供普通快递服务</p>
+                </div>
+                <div class="each-box">
+                    <img src="../img/footer-3.png" alt="">
+                    <h4>精美礼盒</h4>
+                    <p>甄选精美礼盒包装</br>尊享官网购物体验</p>
+                </div>
+                <div class="each-box">
+                    <img src="../img/footer-4.png" alt="">
+                    <h4>绑定公众号</h4>
+                    <p>首次绑定会员 即赠100积分</br>悦享每月1次柜台免费服务</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 服务详情 -->
+        <div class="after-sale">
+            <div class="after-sale-inner">
+                <ul>
+                    <span>关于我们</span>
+                    <li>加入兰蔻</li>
+                    <li>会员中心</li>
+                </ul>
+                <ul>
+                    <span>联系我们</span>
+                    <li>线上美容顾问</li>
+                    <li>订购热线：4008208016</li>
+                </ul>
+                <ul>
+                    <span>配送及退货</span>
+                </ul>
+                <ul>
+                    <span>专柜查询</span>
+                </ul>
+                <ul style="width: 180px">
+                    <span>关注我们</span>
+                    <li>
+                        <i class="iconfont" style="color: white">&#xe600;</i> 官方微信
+                    </li>
+                    <li>
+                        <i class="iconfont" style="color: white">&#xe63d;</i> 官方微博
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 我的邮箱 -->
+        <div class="my-email">
+            <div class="my-email-inner">
+                <div class="text">
+                    <span class="iconfont email-font">&#xe8dc;</span>
+                    <span>电子邮件</span>
+                </div>
+                <div class="form-input subscribe">
+                    <input class="footer-bottom-input" type="text" maxlength="" placeholder="* 请输入您的邮箱" id="subscribe">
+                    <button class="e-footer-mail-btn" id="subscription">确定</button>
+                    <!-- <div class="msg-block">
+                         <span style="color:#d51b51;font-size:12px">请输入有效的邮箱</span>
+                   </div> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p class="first01">© L’Oreal China 欧莱雅（中国）有限公司版权所有&nbsp;&nbsp;&nbsp;中国工商 沪ICP备08100043号-34&nbsp;&nbsp;沪公网安备&nbsp;&nbsp;31010602001526号</p>
+            <p class="first02">使用条款&nbsp;&nbsp;Cookies政策&nbsp;&nbsp;隐私政策</p>
+            <p class="first02" style="margin: 0 auto 60px;">浏览该网站表示您接受并同意我们使 用cookies为您提供个性化的浏览体验。点击Cookies政策了解详情</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div style="height: 150px;width:100% ">
+
+    </div> -->
+
+
+
+
+
+    <script type="text/javascript " src="../js/banner.js "></script>
+
+    <script type="text/javascript ">
+        $(function() {
+
+
+
+            $('#demo01').flexslider({
+
+                animation: "slide ",
+
+                direction: "horizontal ",
+
+                easing: "swing "
+
+            });
+
+
+
+            $('#demo02').flexslider({
+
+                animation: "slide ",
+
+                direction: "vertical ",
+
+                easing: "swing "
+
+            });
+
+
+
+        });
+    </script>
+
+    <!-- 第二轮播图js -->
+    <script>
+        $(document).ready(function(e) {
+
+            $('#b03').unslider({
+
+                dots: true
+
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

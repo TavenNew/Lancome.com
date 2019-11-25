@@ -1,0 +1,149 @@
+.footer {
+  width: 100%;
+  height: 670px;
+  background-color: black;
+  margin-top: -5px;
+}
+.footer .lancome-china {
+  width: 100%;
+  height: 68px;
+  box-sizing: border-box;
+}
+.footer .lancome-china h4 {
+  height: 68px;
+  padding-top: 44px;
+  line-height: 24px;
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  font-weight: 900;
+}
+.footer .sell-serve {
+  width: 100%;
+  height: 180px;
+  margin: 54px 0;
+}
+.footer .sell-serve .sell-serve-inner {
+  width: 1320px;
+  margin: 0 auto;
+  height: 180px;
+  box-sizing: border-box;
+}
+.footer .sell-serve .sell-serve-inner .each-box {
+  float: left;
+  width: 330px;
+  box-sizing: border-box;
+  height: 180px;
+  text-align: center;
+}
+.footer .sell-serve .sell-serve-inner .each-box h4 {
+  height: 16px;
+  margin: 13px 0 10px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 900;
+  color: white;
+}
+.footer .sell-serve .sell-serve-inner .each-box p {
+  line-height: 14px;
+  font-size: 14px;
+  color: #999999;
+}
+.footer .after-sale {
+  width: 100%;
+  height: 200px;
+  padding-top: 54px 0 52px;
+  border-top: 1px solid #666666;
+  background-color: black;
+}
+.footer .after-sale .after-sale-inner {
+  padding-left: 50px;
+  width: 1165px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 54px;
+}
+.footer .after-sale .after-sale-inner ul {
+  float: left;
+  width: 233px;
+  box-sizing: border-box;
+  background-color: black;
+}
+.footer .after-sale .after-sale-inner ul span {
+  display: inline-block;
+  width: 100%;
+  height: 18px;
+  text-align: left;
+  line-height: 18px;
+  font-size: 16px;
+  font-weight: 900;
+  color: white;
+  margin-bottom: 15px;
+}
+.footer .after-sale .after-sale-inner ul li {
+  height: 25px;
+  line-height: 25px;
+  font-size: 14px;
+  color: white;
+  text-align: left;
+  color: #999999;
+}
+.footer .my-email {
+  width: 100%;
+  height: 80px;
+}
+.footer .my-email .my-email-inner {
+  width: 1070px;
+  margin: 0 auto;
+  height: 80px;
+}
+.footer .my-email .my-email-inner .text {
+  width: 100%;
+  height: 30px;
+}
+.footer .my-email .my-email-inner .text span {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  color: white;
+}
+.footer .my-email .my-email-inner .text .email-font {
+  font-size: 22px;
+  margin-right: 10px;
+}
+.footer .my-email .my-email-inner .form-input .footer-bottom-input {
+  width: 243px;
+  height: 30px;
+  padding: 3px 57px 4px 12px;
+  font-size: 14px;
+  color: #666666;
+}
+.footer .my-email .my-email-inner .form-input .e-footer-mail-btn {
+  width: 54px;
+  height: 30px;
+  font-size: 16px;
+  margin-top: 5px;
+  vertical-align: baseline;
+  margin-left: -2px;
+}
+.footer .copyright .first01 {
+  width: 800px;
+  margin: 30px auto;
+  padding-top: 40px;
+  height: 60px;
+  line-height: 20px;
+  font-size: 12px;
+  color: black;
+  text-align: center;
+}
+.footer .copyright .first02 {
+  width: 800px;
+  margin: 0 auto;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  color: #999999;
+  text-align: center;
+}

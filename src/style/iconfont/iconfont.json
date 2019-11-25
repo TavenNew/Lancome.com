@@ -1,0 +1,163 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "639726",
+      "name": "电话",
+      "font_class": "dianhua",
+      "unicode": "e6ff",
+      "unicode_decimal": 59135
+    },
+    {
+      "icon_id": "978353",
+      "name": "新浪微博",
+      "font_class": "weibo",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "1054087",
+      "name": "微信",
+      "font_class": "weixin-copy",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "2082748",
+      "name": "支付宝",
+      "font_class": "zhifubao",
+      "unicode": "e6c3",
+      "unicode_decimal": 59075
+    },
+    {
+      "icon_id": "2620321",
+      "name": "邮件",
+      "font_class": "youjian",
+      "unicode": "e8dc",
+      "unicode_decimal": 59612
+    },
+    {
+      "icon_id": "3168555",
+      "name": "个人中心",
+      "font_class": "renwu",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "3216512",
+      "name": "购物袋",
+      "font_class": "gouwudai",
+      "unicode": "e666",
+      "unicode_decimal": 58982
+    },
+    {
+      "icon_id": "3722820",
+      "name": "银联",
+      "font_class": "yinlian",
+      "unicode": "e501",
+      "unicode_decimal": 58625
+    },
+    {
+      "icon_id": "5188077",
+      "name": "对话",
+      "font_class": "duihua",
+      "unicode": "e69a",
+      "unicode_decimal": 59034
+    },
+    {
+      "icon_id": "6118051",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e68a",
+      "unicode_decimal": 59018
+    },
+    {
+      "icon_id": "6140309",
+      "name": "购物袋",
+      "font_class": "gouwudai1",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "6890616",
+      "name": "个人中心",
+      "font_class": "gerenzhongxin",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "6957034",
+      "name": "放大镜",
+      "font_class": "fangdajing",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "7004847",
+      "name": "实心星星",
+      "font_class": "start-copy",
+      "unicode": "e518",
+      "unicode_decimal": 58648
+    },
+    {
+      "icon_id": "7803110",
+      "name": "头像",
+      "font_class": "touxiang",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "8870062",
+      "name": "银联",
+      "font_class": "yinlian1",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "9334897",
+      "name": "计时器",
+      "font_class": "jishiqi",
+      "unicode": "e6a6",
+      "unicode_decimal": 59046
+    },
+    {
+      "icon_id": "9495763",
+      "name": "礼物",
+      "font_class": "liwu",
+      "unicode": "e722",
+      "unicode_decimal": 59170
+    },
+    {
+      "icon_id": "9826023",
+      "name": "微信支付",
+      "font_class": "weixinzhifu1",
+      "unicode": "e502",
+      "unicode_decimal": 58626
+    },
+    {
+      "icon_id": "9936550",
+      "name": "微信支付",
+      "font_class": "weixinzhifu",
+      "unicode": "e66f",
+      "unicode_decimal": 58991
+    },
+    {
+      "icon_id": "10216906",
+      "name": "国徽",
+      "font_class": "guohui",
+      "unicode": "e503",
+      "unicode_decimal": 58627
+    },
+    {
+      "icon_id": "10849648",
+      "name": "锁",
+      "font_class": "suo",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+.header {
+  width: 100%;
+  height: 138px;
+}
+.header .header-top {
+  width: 100%;
+  height: 78px;
+  background-color: black;
+}
+.header .header-top .header-top-container {
+  width: 1366px;
+  height: 78px;
+  margin: 0 auto;
+  padding-top: 40px;
+  border: none;
+}
+.header .header-top .header-top-container a {
+  display: block;
+  width: 153px;
+  height: 38px;
+  margin: 0 auto;
+}
+.header .header-top .header-top-container a img {
+  width: 153px;
+}
+.header .header-bottom {
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  padding-top: 10px;
+  position: relative;
+}
+.header .header-bottom .header-bottom-container {
+  width: 1396px;
+  height: 50px;
+  margin: 0 auto;
+  background-color: black;
+  padding: 0 78px 0 49px;
+}
+.header .header-bottom .header-bottom-container > .nav {
+  display: inline-block;
+  height: 50px;
+}
+.header .header-bottom .header-bottom-container > .nav .subnav-left {
+  float: left;
+  height: 280px;
+}
+.header .header-bottom .header-bottom-container > .nav .subnav-left .subnav-menu .out-list {
+  width: 160px;
+  margin: 0 10px 0 0;
+  float: left;
+}
+.header .header-bottom .header-bottom-container > .nav .subnav-left .subnav-menu .out-list span {
+  display: block;
+  padding: 0 0 16px;
+  color: black;
+  font-size: 15px;
+  text-align: left;
+  line-height: 20px;
+  font-weight: 900;
+}
+.header .header-bottom .header-bottom-container > .nav .subnav-left .subnav-menu .out-list .inside-ul {
+  width: 160px;
+}
+.header .header-bottom .header-bottom-container > .nav .subnav-left .subnav-menu .out-list .inside-ul .inside-list {
+  height: 18px;
+  margin: 12px 0 0;
+}
+.header .header-bottom .header-bottom-container > .nav .subnav-left .subnav-menu .out-list .inside-ul .inside-list a {
+  font-size: 14px;
+  color: black;
+  line-height: 16px;
+  text-align: left;
+}
+.header .header-bottom .header-bottom-container > .nav .subnav-left .subnav-menu .out-list .inside-ul .inside-list a:hover {
+  text-decoration: underline;
+}
+.header .header-bottom .header-bottom-container > .nav .subnav-right {
+  float: left;
+  width: 395px;
+  height: 280px;
+  padding-left: 94px;
+  border-left: 1px #ccc solid;
+}
+.header .header-bottom .header-bottom-container > .nav .subnav-right a {
+  display: inline-block;
+  width: 300px;
+}
+.header .header-bottom .header-bottom-container > .nav .subnav-right a img {
+  width: 300px;
+}
+.header .header-bottom .header-bottom-container > .nav .subnav-right a div {
+  height: 37px;
+  padding: 15px 0 0;
+  font-size: 15px;
+  color: black;
+  line-height: 22px;
+  font-weight: 900;
+  text-align: center;
+}
+.header .header-bottom .header-bottom-container > .nav .subnav-right a p {
+  height: 18px;
+  margin-bottom: 10px;
+  color: #333333;
+  font-size: 14px;
+  text-align: center;
+}
+.header .header-bottom .header-bottom-container > .nav > li {
+  float: left;
+  height: 50px;
+}
+.header .header-bottom .header-bottom-container > .nav > li > a {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  padding: 0 23px;
+}
+.header .header-bottom .header-bottom-container > .nav > li > a:hover {
+  font-weight: 900;
+}
+.header .header-bottom .header-bottom-container > .nav > li > a .tag {
+  background: #d51b51;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  font-size: 12px;
+  transform: scale(0.83333333, 0.83333333);
+  line-height: 13px;
+  height: 15px;
+  display: inline-block;
+  padding: 1.5px 4px 0;
+  margin: -12px -3px 0 1px;
+  vertical-align: middle;
+}
+.header .header-bottom .header-bottom-container > .nav .skincare:hover .skincare-subnav {
+  display: block;
+}
+.header .header-bottom .header-bottom-container > .nav .skincare .skincare-subnav {
+  width: 100%;
+  height: 356px;
+  padding-top: 40px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 60px;
+  display: none;
+  z-index: 100;
+}
+.header .header-bottom .header-bottom-container > .nav .skincare .skincare-subnav .subnav-container {
+  height: 316px;
+  width: 910px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.header .header-bottom .header-bottom-container > .nav .skincare .skincare-subnav .subnav-container .subnav-left {
+  width: 510px;
+}
+.header .header-bottom .header-bottom-container > .nav .makeup:hover .makeup-subnav {
+  display: block;
+}
+.header .header-bottom .header-bottom-container > .nav .makeup .makeup-subnav {
+  width: 100%;
+  height: 356px;
+  padding-top: 40px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 60px;
+  display: none;
+  z-index: 100;
+}
+.header .header-bottom .header-bottom-container > .nav .makeup .makeup-subnav .subnav-container {
+  height: 316px;
+  width: 1080px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.header .header-bottom .header-bottom-container > .nav .makeup .makeup-subnav .subnav-container .subnav-left {
+  width: 680px;
+}
+.header .header-bottom .header-bottom-container > .nav .perfume:hover .perfume-subnav {
+  display: block;
+}
+.header .header-bottom .header-bottom-container > .nav .perfume .perfume-subnav {
+  width: 100%;
+  height: 356px;
+  padding-top: 40px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 60px;
+  display: none;
+  z-index: 100;
+}
+.header .header-bottom .header-bottom-container > .nav .perfume .perfume-subnav .subnav-container {
+  height: 316px;
+  width: 570px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.header .header-bottom .header-bottom-container > .nav .perfume .perfume-subnav .subnav-container .subnav-left {
+  width: 170px;
+}
+.header .header-bottom .header-bottom-container > .nav .boom-list {
+  font-size: 0;
+  position: relative;
+}
+.header .header-bottom .header-bottom-container > .nav .boom-list:hover .boom-list-subnav {
+  display: block;
+}
+.header .header-bottom .header-bottom-container > .nav .boom-list .boom-list-subnav {
+  width: 1280px;
+  height: 440px;
+  position: absolute;
+  top: 50px;
+  left: -400px;
+  display: none;
+  z-index: 100;
+}
+.header .header-bottom .header-bottom-container > .nav .reason {
+  font-size: 0;
+  position: relative;
+}
+.header .header-bottom .header-bottom-container > .nav .reason:hover .reason-subnav {
+  display: block;
+}
+.header .header-bottom .header-bottom-container > .nav .reason .reason-subnav {
+  width: 568px;
+  height: 375px;
+  position: absolute;
+  top: 50px;
+  left: -200px;
+  display: none;
+  z-index: 100;
+}
+.header .header-bottom .header-bottom-container > .search {
+  float: right;
+  height: 48px;
+}
+.header .header-bottom .header-bottom-container > .search > li {
+  float: left;
+  height: 48px;
+  color: black;
+  margin-left: 14px;
+  padding: 8px 2px 18px;
+}
+.header .header-bottom .header-bottom-container > .search > li > a {
+  display: inline-block;
+  height: 48px;
+  color: white;
+  font-size: 22px;
+}

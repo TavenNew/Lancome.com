@@ -1,0 +1,184 @@
+.production-details {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-top: 100px;
+}
+.production-details .main-box {
+  width: 1300px;
+  height: 600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  border-bottom: 1px solid #999999;
+}
+.production-details .main-box .pro-right {
+  width: 620px;
+  height: 600px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 100;
+}
+.production-details .main-box .pro-right .pro-right-top h2,
+.production-details .main-box .pro-right .pro-right-top h1 {
+  font-size: 18px;
+  height: 21px;
+  line-height: 21px;
+  color: black;
+}
+.production-details .main-box .pro-right .pro-right-top h1 {
+  margin-top: 5px;
+}
+.production-details .main-box .pro-right .pro-right-top .start {
+  font-size: 14px;
+  color: black;
+  margin-top: 26px;
+}
+.production-details .main-box .pro-right .pro-right-top .start span {
+  margin-left: 20px;
+}
+.production-details .main-box .pro-right .pro-right-top .start span a {
+  color: #999999;
+  text-decoration: none;
+}
+.production-details .main-box .pro-right .pro-capacity {
+  width: 166px;
+  height: 72px;
+  margin: 10px;
+  padding: 18px 20px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+.production-details .main-box .pro-right .pro-capacity p {
+  font-size: 14px;
+  color: black;
+}
+.production-details .main-box .pro-right .pro-capacity .pro-capacity-price {
+  color: #999999;
+  margin-top: 8px;
+}
+.production-details .main-box .pro-right .buy-kind {
+  width: 100%;
+  height: 50px;
+  margin: 20px 0;
+}
+.production-details .main-box .pro-right .buy-kind .float-left {
+  float: left;
+}
+.production-details .main-box .pro-right .buy-kind .pro-price {
+  display: inline-block;
+  width: 40px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  color: black;
+  font-weight: 900;
+  margin-right: 50px;
+}
+.production-details .main-box .pro-right .buy-kind .amount-widget {
+  margin: 0 10px 0 0;
+  width: 102px;
+  height: 48px;
+  border: 1px solid #e6e6e6;
+}
+.production-details .main-box .pro-right .buy-kind .zs-increase,
+.production-details .main-box .pro-right .buy-kind .zs-no-increase,
+.production-details .main-box .pro-right .buy-kind .zs-decrease,
+.production-details .main-box .pro-right .buy-kind .zs-no-decrease {
+  background: url(http://icon.zol-img.com.cn/newshop/shop/detail/youdian_v1/bg.png) no-repeat;
+  float: left;
+  width: 28px;
+  height: 48px;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+.production-details .main-box .pro-right .buy-kind .zs-increase {
+  background-position: -32px -155px;
+}
+.production-details .main-box .pro-right .buy-kind .zs-goods-number {
+  float: left;
+  width: 44px;
+  height: 48px;
+  text-align: center;
+  font: 12px/28px "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";
+  border: 0 none;
+  border-left: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
+  color: #333;
+}
+.production-details .main-box .pro-right .buy-kind .zs-decrease {
+  background-position: 0 -155px;
+}
+.production-details .main-box .pro-right .buy-kind .add-shopcar,
+.production-details .main-box .pro-right .buy-kind .buyit-now {
+  width: 160px;
+  height: 50px;
+  background-color: black;
+  outline: none;
+  border: none;
+  margin: 0 5px;
+  transition: all 0.3s;
+}
+.production-details .main-box .pro-right .buy-kind .add-shopcar:hover,
+.production-details .main-box .pro-right .buy-kind .buyit-now:hover {
+  background-color: #d61b52;
+}
+.production-details .main-box .pro-right .buy-kind .add-shopcar a,
+.production-details .main-box .pro-right .buy-kind .buyit-now a {
+  display: block;
+  color: white;
+  line-height: 50px;
+  font-weight: 900;
+  font-size: 14px;
+  text-align: center;
+}
+.production-details .main-box .pro-right .notes {
+  width: 100%;
+  box-sizing: border-box;
+}
+.production-details .main-box .pro-right .notes p,
+.production-details .main-box .pro-right .notes a {
+  height: 24px;
+  line-height: 24px;
+  font-size: 14px;
+  color: black;
+  margin: 8px 0;
+}
+.production-details .main-box .pro-right .notes .color-red {
+  color: #ff0000;
+  margin-bottom: 25px;
+}
+.production-details .main-box .pro-right .notes a {
+  text-decoration: underline;
+  display: block;
+}
+.production-details .main-box .pro-right .notes .add-list {
+  margin-top: 30px;
+}
+.production-details .main-box .pro-right > ul li {
+  float: left;
+  text-align: center;
+  width: 33%;
+  border-left: 1px solid #999999;
+}
+.production-details .main-box .pro-right > ul li p {
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+  color: black;
+}
+.production-details .main-box .pro-right > ul .border-right {
+  border-right: 1px solid #999999;
+}
+.production-details .propic-list {
+  margin-top: 50px;
+  width: 790px;
+  margin: 0 auto;
+}
+.production-details .propic-list img {
+  width: 100%;
+}
+.production-details .bottom-first-pic {
+  border-top: 1px solid #999999;
+}

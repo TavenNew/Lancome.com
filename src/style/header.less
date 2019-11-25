@@ -1,0 +1,323 @@
+// 头部样式
+.header {
+  width: 100%;
+  height: 138px;
+  // 上部logo
+  .header-top {
+    width: 100%;
+    height: 78px;
+    background-color: black;
+    .header-top-container {
+      width: 1366px;
+      height: 78px;
+      margin: 0 auto;
+      padding-top: 40px;
+      border: none;
+      a {
+        display: block;
+        width: 153px;
+        height: 38px;
+        margin: 0 auto;
+        img {
+          width: 153px;
+        }
+      }
+    }
+  }
+  // 下面的一级导航
+  .header-bottom {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    padding-top: 10px;
+    position: relative;
+    // 导航版心
+    .header-bottom-container {
+      width: 1396px;
+      height: 50px;
+      margin: 0 auto;
+      background-color: black;
+      padding: 0 78px 0 49px;
+      > .nav {
+        display: inline-block;
+        height: 50px;
+
+        // 二级导航通用样式表
+        .subnav-left {
+          float: left;
+          // width: 510px;
+          height: 280px;
+          // 外部无序列表
+          .subnav-menu {
+            // 外部li标签
+            .out-list {
+              width: 160px;
+              margin: 0 10px 0 0;
+              float: left;
+              // 加粗字体
+              span {
+                display: block;
+                padding: 0 0 16px;
+                color: black;
+                font-size: 15px;
+                text-align: left;
+                line-height: 20px;
+                font-weight: 900;
+              }
+              // 内部无序列表
+              .inside-ul {
+                width: 160px;
+                // 内部li标签
+                .inside-list {
+                  height: 18px;
+                  margin: 12px 0 0;
+                  // 悬浮样式
+                  a {
+                    font-size: 14px;
+                    color: black;
+                    line-height: 16px;
+                    text-align: left;
+                    &:hover {
+                      text-decoration: underline;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        // 右侧图片
+        .subnav-right {
+          float: left;
+          width: 395px;
+          height: 280px;
+          padding-left: 94px;
+          border-left: 1px #ccc solid;
+          a {
+            display: inline-block;
+            width: 300px;
+            img {
+              width: 300px;
+            }
+            div {
+              height: 37px;
+              padding: 15px 0 0;
+              font-size: 15px;
+              color: black;
+              line-height: 22px;
+              font-weight: 900;
+              text-align: center;
+            }
+            p {
+              height: 18px;
+              margin-bottom: 10px;
+              color: #333333;
+              font-size: 14px;
+              text-align: center;
+            }
+          }
+        }
+        // 导航选项
+        > li {
+          float: left;
+          height: 50px;
+          // position: relative;
+          > a {
+            display: inline-block;
+            height: 50px;
+            line-height: 50px;
+            color: white;
+            font-size: 14px;
+            text-align: center;
+            padding: 0 23px;
+            // 悬浮加粗
+            &:hover {
+              font-weight: 900;
+            }
+            // 红色HOT
+            .tag {
+              background: #d51b51;
+              border-top-left-radius: 8px;
+              border-bottom-right-radius: 8px;
+              font-size: 12px;
+              transform: scale(0.83333333, 0.83333333);
+              line-height: 13px;
+              height: 15px;
+              display: inline-block;
+              padding: 1.5px 4px 0;
+              margin: -12px -3px 0 1px;
+              vertical-align: middle;
+            }
+          }
+        }
+        // 护肤下的二级导航
+        .skincare {
+          // 二级导航
+          &:hover {
+            .skincare-subnav {
+              display: block;
+            }
+          }
+          .skincare-subnav {
+            width: 100%;
+            height: 356px;
+            padding-top: 40px;
+            background-color: white;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            position: absolute;
+            left: 0;
+            top: 60px;
+            display: none;
+            z-index: 100;
+            // 二级导航版心
+            .subnav-container {
+              height: 316px;
+              width: 910px;
+              margin: 0 auto;
+              overflow: hidden;
+              // 左边的列表
+              .subnav-left {
+                width: 510px;
+              }
+            }
+          }
+        }
+
+        // 彩妆下的二级导航样式
+        .makeup {
+          // 二级导航
+          &:hover {
+            .makeup-subnav {
+              display: block;
+            }
+          }
+          .makeup-subnav {
+            width: 100%;
+            height: 356px;
+            padding-top: 40px;
+            background-color: white;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            position: absolute;
+            left: 0;
+            top: 60px;
+            display: none;
+            z-index: 100;
+            // 二级导航版心
+            .subnav-container {
+              height: 316px;
+              width: 1080px;
+              margin: 0 auto;
+              overflow: hidden;
+              // 左边的列表
+              .subnav-left {
+                width: 680px;
+              }
+            }
+          }
+        }
+
+        // 香水下的二级导航样式
+        .perfume {
+          // 二级导航
+          &:hover {
+            .perfume-subnav {
+              display: block;
+            }
+          }
+          .perfume-subnav {
+            width: 100%;
+            height: 356px;
+            padding-top: 40px;
+            background-color: white;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            position: absolute;
+            left: 0;
+            top: 60px;
+            display: none;
+            z-index: 100;
+            // 二级导航版心
+            .subnav-container {
+              height: 316px;
+              width: 570px;
+              margin: 0 auto;
+              overflow: hidden;
+              // 左边的列表
+              .subnav-left {
+                width: 170px;
+              }
+            }
+          }
+        }
+
+        // 畅销榜单二级导航样式
+        .boom-list {
+          font-size: 0;
+          position: relative;
+          &:hover {
+            .boom-list-subnav {
+              display: block;
+            }
+          }
+          .boom-list-subnav {
+            width: 1280px;
+            height: 440px;
+            position: absolute;
+            top: 50px;
+            left: -400px;
+            display: none;
+            z-index: 100;
+          }
+        }
+
+        // 官网购物理由样式
+        .reason {
+          font-size: 0;
+          position: relative;
+          &:hover {
+            .reason-subnav {
+              display: block;
+            }
+          }
+          .reason-subnav {
+            width: 568px;
+            height: 375px;
+            position: absolute;
+            top: 50px;
+            left: -200px;
+            display: none;
+            z-index: 100;
+          }
+        }
+      }
+
+      // 右侧三个小图标
+      > .search {
+        float: right;
+        height: 48px;
+        > li {
+          float: left;
+          //   width: 26px;
+          height: 48px;
+          color: black;
+          margin-left: 14px;
+          padding: 8px 2px 18px;
+          > a {
+            display: inline-block;
+            height: 48px;
+            // width: 22px;
+            color: white;
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 轮播图样式
